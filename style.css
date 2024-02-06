@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #8c52ff, #7640e1, #612fc4, #4b1da8, #360a8c);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    font-size: 15px;
+}
+
+
+.weather-app {
+    background-color: #a481eb;
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #8C52FF;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 3.5rem;
+}
+
+.search-btn {
+    background-color: #804de7;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: backgroung-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #6237b9;
+}
+
+.city-date-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.city-date-section .city {
+    font-size: 2rem;
+    opacity: 0.9;
+    color: #ecf0f1;
+}
+
+.city-date-section .date {
+    background-color: #5a1fcf;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #ecf0f1;
+}
+
+.temperature-info {
+    margin-top:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temperature-info .temp {
+    font-size: 9rem;
+    color: #ecf0f1;
+}
+
+.temperature-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #ecf0f1;
+}
+
+.temperature-info .description i {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    color: #ecf0f1;
+}
+
+.temperature-info .description span {
+    font-size: 1.5rem;
+
+}
+
+.additional-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #ecf0f1;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+    background-color: #5a18dd;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 15px;
+    padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #ecf0f1;
+}
+
+.additional-info .material-icons {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;
+}
